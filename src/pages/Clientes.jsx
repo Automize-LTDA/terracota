@@ -496,8 +496,8 @@ export default function Clientes({
         </div>
 
         {/* Barra de Ações com Sub-abas e Botão de Fechar */}
-        <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
-          <div style={{
+        <div className="subtabs-wrapper" style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+          <div className="subtabs-container" style={{
             display: 'flex',
             background: 'var(--color-primary-light)',
             padding: '0.25rem',
@@ -1163,6 +1163,28 @@ export default function Clientes({
           }
           .grid-responsive {
             grid-template-columns: 1fr !important;
+          }
+          .charts-grid {
+            grid-template-columns: 1fr !important;
+          }
+          .chart-full {
+            grid-column: span 1 !important;
+          }
+          .subtabs-wrapper {
+            flex-wrap: wrap !important;
+            width: 100% !important;
+            justify-content: space-between !important;
+          }
+          .subtabs-container {
+            flex-wrap: wrap !important;
+            width: 100% !important;
+            gap: 0.25rem !important;
+          }
+          .subtabs-container button {
+            flex: 1 1 auto !important;
+            justify-content: center !important;
+            padding: 0.5rem 0.75rem !important;
+            font-size: 0.75rem !important;
           }
         }
       `}</style>
